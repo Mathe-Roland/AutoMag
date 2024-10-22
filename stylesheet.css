@@ -1,115 +1,106 @@
-body{
+body {
     margin: 0;
     min-height: 100vh;
     min-width: 100vw;
-}
-
-.mainPage{
+  }
+  
+  .main-content {
     padding: 50px;
-}
-
-.nav-link,.footer-links{
+  }
+  
+  .nav-link,
+  .footer-links {
     text-decoration: none;
-}
-
-.individual-cars-card-container{
+  }
+  
+  .individual-cars-card-container {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     width: 320px;
     height: 360px;
     flex-grow: 1;
     overflow: hidden;
     gap: 5px;
-}
-
-
-.individual-car-image{
+  }
+  
+  .individual-car-image {
     width: 50%;
     width: 100px;
     height: 100px;
-}
-
-.image-and-price-container{
+  }
+  
+  .image-and-price-container {
     display: flex;
-}
-
-.grid-container-for-cards {
+  }
+  
+  .grid-container-for-cards {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 10px;
-}
-
-.price-individual-card{
+  }
+  
+  .price-individual-card {
     font-size: 32px;
-}
-
-.price-container{
+  }
+  
+  .price-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-}
-
-.description-container{
+  }
+  
+  .card-main-content {
     height: 100px;
-}
-
-.description-for-individual-cards{
-
+  }
+  
+  .card-main-content > p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     text-overflow: ellipsis;
     overflow: hidden;
-}
-
-
-.card-buttons{
+  }
+  
+  .card-buttons {
     width: 68px;
     height: 50px;
     background-color: rgba(33, 173, 87, 0.623);
     border-radius: 8px;
-    border:none;
-}
-
-.card-buttons:hover{
+    border: none;
+  }
+  
+  .card-buttons:hover {
     background-color: rgba(187, 223, 31, 0.829);
-}
-
-.details-and-buy-button-container{
+  }
+  
+  .details-and-buy-button-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-.footer-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .grid-container-for-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
     }
-
-
-
-
-
-@media screen and (min-width:600px) {
-    
-    .grid-container-for-cards{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-        }
-    
-}
-
-@media screen and (min-width:900px) {
-    
-    .grid-container-for-cards{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-        }
-    
-}
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .grid-container-for-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
