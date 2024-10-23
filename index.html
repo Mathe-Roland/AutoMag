@@ -9,9 +9,10 @@
       content="Car shop with affordable prices and popular brands like Toyota, Citroen, Peugeot, Volkswagen, Honda, Chevrolet, Tesla and Dacia"
     />
     <link href="stylesheet.css" rel="stylesheet" />
+    <link href="common.css" rel="stylesheet" />
   </head>
   <body class="body">
-    <header>
+    <header class="layout-header">
       <h1>AutoMag</h1>
       <h2>Your four wheel dealer</h2>
       <nav>
@@ -28,20 +29,14 @@
       <h3>Popular cars</h3>
       <section class="grid-container-for-cards">
         <article class="individual-cars-card-container">
-          <header class="image-and-price-container">
-            <div class="image-container">
+          <header class="image-container">
               <img
                 class="individual-car-image"
                 src="https://upload.wikimedia.org/wikipedia/commons/6/6a/2017_Toyota_Corolla_LE_front_5.6.18.jpg"
                 alt="Toyota Corolla LE"
               />
-            </div>
-            <div class="price-container">
-              <p class="price-individual-card">21,000</p>
-              <p>EUR</p>
-            </div>
-          </header>
-          <div class="card-main-content">
+        </header>
+        <div class="card-main-content">
             <h4>Toyota Corolla LE</h4>
             <p>
               The Toyota Corolla LE is a mid-level trim of the popular Corolla
@@ -59,36 +54,31 @@
               longevity, the Corolla LE is a smart, affordable option for those
               seeking a well-rounded compact sedan.
             </p>
-          </div>
+              <p class="price-individual-card">21,000 EUR</p>
+        </div>
           <footer class="details-and-buy-button-container">
             <button class="card-buttons">More details...</button>
             <button class="card-buttons">Buy</button>
           </footer>
         </article>
         <article class="individual-cars-card-container">
-          <header class="image-and-price-container">
-            <div class="image-container">
+          <header class="image-container">
               <img
                 class="individual-car-image"
                 src="https://attic.sh/vj7w99ok3nlhjga31ej14l6o5nno"
                 alt="Citroën C3"
               />
-            </div>
-            <div class="price-container">
-              <p class="price-individual-card">23,000</p>
-              <p>EUR</p>
-            </div>
-          </header>
-          <div class="card-main-content">
+        </header>
+        <div class="card-main-content">
             <h4>Citroën C3</h4>
             <p>
-              Design: The Citroën C3 features a unique and modern aesthetic,
-              characterized by its rounded shapes, bold front grille, and
-              distinctive headlight design. Its colorful and customizable
-              exterior options allow buyers to personalize their vehicles,
-              making it stand out in the subcompact segment. The roof can often
-              be contrasted with the body color, enhancing its playful
-              character. Interior Comfort: Inside, the C3 is designed with
+                Design: The Citroën C3 features a unique and modern aesthetic,
+                characterized by its rounded shapes, bold front grille, and
+                distinctive headlight design. Its colorful and customizable
+                exterior options allow buyers to personalize their vehicles,
+                making it stand out in the subcompact segment. The roof can often
+                be contrasted with the body color, enhancing its playful
+                character. Interior Comfort: Inside, the C3 is designed with
               comfort and practicality in mind. The cabin offers a spacious feel
               with ample headroom and legroom for both front and rear
               passengers. The seats are designed for comfort during longer
@@ -106,6 +96,7 @@
               diesel engine. The C3 is designed to deliver a smooth driving
               experience, making it suitable for both city and highway driving.
             </p>
+            <p class="price-individual-card">23,000 EUR</p>
           </div>
           <div class="details-and-buy-button-container">
             <button class="card-buttons">More details...</button>
@@ -114,19 +105,13 @@
         </article>
         <article class="individual-cars-card-container">
           <header class="image-and-price-container">
-            <div class="image-container">
               <img
                 class="individual-car-image"
                 src="https://attic.sh/0zalyoc0f7uzoi916yizv3v3vf13"
                 alt="Peugeot 208"
               />
-            </div>
-            <div class="price-container">
-              <p class="price-individual-card">25,000</p>
-              <p>EUR</p>
-            </div>
-          </header>
-          <div class="card-main-content">
+            </header>
+            <div class="card-main-content">
             <h4>Peugeot 208</h4>
             <p>
               Design: The Peugeot 208 showcases a distinctive and contemporary
@@ -154,6 +139,7 @@
               variant, the e-208, which delivers zero-emission driving with an
               impressive range.
             </p>
+            <p class="price-individual-card">25,000 EUR</p>
           </div>
           <footer class="details-and-buy-button-container">
             <button class="card-buttons">More details...</button>
@@ -161,45 +147,40 @@
           </footer>
         </article>
         <article class="individual-cars-card-container">
-          <header class="image-and-price-container">
-            <div class="image-container">
+          <header class="image-container">
               <img
                 class="individual-car-image"
                 src="https://attic.sh/xx0yy7il92bctua8u8pf3jq7pjxr"
                 alt="Dacia Sandero"
               />
-            </div>
-            <div class="price-container">
-              <p class="price-individual-card">12,000</p>
-              <p>EUR</p>
-            </div>
-          </header>
-          <div class="card-main-content">
+        </header>
+        <div class="card-main-content">
             <h4>Dacia Sandero</h4>
             <p>
-              Affordability: One of the standout features of the Dacia Sandero
-              is its low starting price, offering a practical alternative for
-              those seeking a new car without breaking the bank. The Sandero is
-              often recognized as one of the most affordable cars in Europe,
-              providing great value for money. Engine Options: The Sandero
-              typically offers a range of petrol and diesel engines, providing a
-              balance between performance and efficiency. Engine options usually
-              include a 1.0-liter petrol engine and a 1.5-liter diesel, both
-              designed to deliver respectable fuel economy, making it an
-              economical choice for daily commuting. Interior Space and Comfort:
-              The Sandero is designed with practicality in mind, offering a
-              surprisingly spacious interior for a compact hatchback. It can
-              comfortably seat up to five passengers, and the rear seats can be
-              folded down to increase cargo space, making it versatile for
-              transporting larger items. The car features simple and functional
-              interior design, with controls and materials aimed at durability
-              rather than luxury. Infotainment and Technology: Depending on the
-              trim level, the Sandero can come equipped with a range of tech
-              features. The Dacia MediaNav system includes a touchscreen display
-              with Bluetooth connectivity, USB ports, and options for
-              navigation. While not as advanced as some competitors, it provides
-              the essential features for modern driving.
+                Affordability: One of the standout features of the Dacia Sandero
+                is its low starting price, offering a practical alternative for
+                those seeking a new car without breaking the bank. The Sandero is
+                often recognized as one of the most affordable cars in Europe,
+                providing great value for money. Engine Options: The Sandero
+                typically offers a range of petrol and diesel engines, providing a
+                balance between performance and efficiency. Engine options usually
+                include a 1.0-liter petrol engine and a 1.5-liter diesel, both
+                designed to deliver respectable fuel economy, making it an
+                economical choice for daily commuting. Interior Space and Comfort:
+                The Sandero is designed with practicality in mind, offering a
+                surprisingly spacious interior for a compact hatchback. It can
+                comfortably seat up to five passengers, and the rear seats can be
+                folded down to increase cargo space, making it versatile for
+                transporting larger items. The car features simple and functional
+                interior design, with controls and materials aimed at durability
+                rather than luxury. Infotainment and Technology: Depending on the
+                trim level, the Sandero can come equipped with a range of tech
+                features. The Dacia MediaNav system includes a touchscreen display
+                with Bluetooth connectivity, USB ports, and options for
+                navigation. While not as advanced as some competitors, it provides
+                the essential features for modern driving.
             </p>
+            <p class="price-individual-card">12,000 EUR</p>
           </div>
           <footer class="details-and-buy-button-container">
             <button class="card-buttons">More details...</button>
@@ -207,20 +188,14 @@
           </footer>
         </article>
         <article class="individual-cars-card-container">
-          <header class="image-and-price-container">
-            <div class="image-container">
+          <header class="image-container">
               <img
                 class="individual-car-image"
                 src="https://attic.sh/zkzwcrwnirntxg6b84vard30x0cp"
                 alt="Volkswagen Golf 5"
               />
-            </div>
-            <div class="price-container">
-              <p class="price-individual-card">8,000</p>
-              <p>EUR</p>
-            </div>
-          </header>
-          <div class="card-main-content">
+        </header>
+        <div class="card-main-content">
             <h4>Volkswagen Golf 5</h4>
             <p>
               Engine Options: The Golf 5 was available with a variety of engine
@@ -250,6 +225,7 @@
               control. Higher trims offered luxury touches such as leather seats
               and a sunroof.
             </p>
+            <p class="price-individual-card">8,000 EUR</p>
           </div>
           <footer class="details-and-buy-button-container">
             <button class="card-buttons">More details...</button>
@@ -257,20 +233,14 @@
           </footer>
         </article>
         <article class="individual-cars-card-container">
-          <header class="image-and-price-container">
-            <div class="image-container">
+          <header class="image-container">
               <img
                 class="individual-car-image"
                 src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Honda_CR-V_EX%E3%83%BBMasterpiece_%28DBA-RW1%29_front.jpg"
                 alt="Honda CR-V"
               />
-            </div>
-            <div class="price-container">
-              <p class="price-individual-card">30,000</p>
-              <p>EUR</p>
-            </div>
-          </header>
-          <div class="card-main-content">
+        </header>
+        <div class="card-main-content">
             <h4>Honda CR-V</h4>
             <p>
               Powertrain and Efficiency: The Honda CR-V offers two primary
@@ -299,6 +269,7 @@
               mitigation, and forward collision warning. These features enhance
               both convenience and safety while driving
             </p>
+            <p class="price-individual-card">30,000 EUR</p>
           </div>
           <footer class="details-and-buy-button-container">
             <button class="card-buttons">More details...</button>
@@ -306,20 +277,14 @@
           </footer>
         </article>
         <article class="individual-cars-card-container">
-          <header class="image-and-price-container">
-            <div class="image-container">
+          <header class="image-container">
               <img
                 class="individual-car-image"
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d0/2020_Chevrolet_Silverado_1500_High_Country%2C_front_10.25.20.jpg"
                 alt="Chevrolet Silverado"
               />
-            </div>
-            <div class="price-container">
-              <p class="price-individual-card">45,000</p>
-              <p>EUR</p>
-            </div>
-          </header>
-          <div class="card-main-content">
+        </header>
+        <div class="card-main-content">
             <h4>Chevrolet Silverado</h4>
             <p>
               Powerful Engine Options: The Silverado offers a wide variety of
@@ -352,6 +317,7 @@
               control and blind-spot monitoring, making the truck as safe as it
               is capable.
             </p>
+            <p class="price-individual-card">45,000 EUR</p>
           </div>
           <footer class="details-and-buy-button-container">
             <button class="card-buttons">More details...</button>
@@ -359,23 +325,17 @@
           </footer>
         </article>
         <article class="individual-cars-card-container">
-          <header class="image-and-price-container">
-            <div class="image-container">
+          <header class="image-container">
               <img
                 class="individual-car-image"
                 src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Tesla_Model_Y_Classic-Days_2022_DSC_0119.jpg"
                 alt="Tesla Model Y"
               />
-            </div>
-            <div class="price-container">
-              <p class="price-individual-card">48,000</p>
-              <p>EUR</p>
-            </div>
-          </header>
-          <div class="card-main-content">
+            </header>
+            <div class="card-main-content">
             <h4>Tesla Model Y</h4>
             <p>
-              Electric Performance: The Model Y offers impressive performance
+                Electric Performance: The Model Y offers impressive performance
               with different variants such as the Long Range and Performance
               models. The Long Range variant delivers up to 330 miles of range
               on a single charge, while the Performance model can accelerate
@@ -412,6 +372,7 @@
               about 30 minutes at a Supercharger. It also supports home charging
               via a Tesla Wall Connector, making it convenient for daily use.
             </p>
+            <p class="price-individual-card">48,000 EUR</p>
           </div>
           <footer class="details-and-buy-button-container">
             <button class="card-buttons">More details...</button>
@@ -419,19 +380,14 @@
           </footer>
         </article>
         <article class="individual-cars-card-container">
-          <header class="image-and-price-container">
-            <div class="image-container">
+          <header class="image-container">
               <img
                 class="individual-car-image"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDh_vOJ7QlaqqRCFY_SyuoSl4-mwV-5e6MuA&s"
                 alt="Volkswagen ID.4"
               />
             </div>
-            <div class="price-container">
-              <p class="price-individual-card">40,000</p>
-              <p>EUR</p>
-            </div>
-          </header>
+        </header>
           <div class="card-main-content">
             <h4>Volkswagen ID.4</h4>
             <p>
@@ -462,6 +418,7 @@
               government incentives and rebates, which can make it more
               affordable compared to conventional SUVs.
             </p>
+            <p class="price-individual-card">40,000 EUR</p>
           </div>
           <footer class="details-and-buy-button-container">
             <button class="card-buttons">More details...</button>
@@ -471,7 +428,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer-container">
       <p>
         <a class="footer-links" href="#">Terms and Agreements</a>
         <a class="footer-links" href="#">Privacy policy</a>
@@ -481,4 +438,5 @@
       <p>Copyright © AutoMag</p>
     </footer>
   </body>
+  <script src="javascript.js"></script>
 </html>
