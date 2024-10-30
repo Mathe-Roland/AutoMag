@@ -54,7 +54,7 @@ header > h2 {
   gap: 15px;
 }
 
-.dropdowns-bar > select {
+.dropdowns-bar > div > select {
   padding: 5px;
 }
 

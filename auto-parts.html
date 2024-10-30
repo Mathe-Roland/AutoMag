@@ -28,25 +28,41 @@
     <main class="main-content">
       
     <div class="cars-selectors-container" aria-label="car selectors container">
-
-        <select class="select-brand" aria-label="select brand">
+      <div>
+        <h3>Brand</h3>
+        <select class="select-brand">
          <option>Select brand</option>
          <option>Toyota</option>
          <option>Dacia</option>
          <option>Citroen</option>
          <option>Volkswagen</option>
         </select>     
+      </div>
+      <div>
+        <h3>
+          Model
+        </h3>
         <select class="select-model">
          <option>Select model</option>
         </select> 
-        <select class="select-fuel-type" aria-label="select fuel">
+      </div>
+      <div>
+        <h3>
+          Fuel type
+        </h3>
+        <select class="select-fuel-type">
          <option> Select fuel type</option>
          <option>Gas</option>
          <option>Diesel</option>
          <option>Electric</option>
          <option>Hybrid</option>
         </select> 
-        <select class="select-engine-displacement" aria-label="select engine displacement">
+      </div>
+      <div>
+        <h3>
+          Engine displacement
+        </h3>
+        <select class="select-engine-displacement">
          <option>Select engine displacement</option>
          <option>1.2</option>
          <option>1.4</option>
@@ -56,7 +72,12 @@
          <option>2.4</option>
          <option>3.0</option>
         </select> 
-        <select class="select-horsepower" aria-label="select horsepower">
+      </div>
+      <div>
+        <h3>
+          Horsepower
+        </h3>
+        <select class="select-horsepower">
          <option>Select horsepower</option>
          <option>90</option>
          <option>100</option>
@@ -68,61 +89,87 @@
          <option>250</option>
          <option>300</option>
         </select> 
+      </div>
 
     </div>
 
-    <section class="hidden" aria-label="dropdown from selected cars specications">
-        <article>
-            <img
+    
+    <section class="cards-grid hidden" aria-label="dropdown from selected cars specications">
+      <article class="card">
+        <header>
+          <img
+            class="card-image"
             width="250"
-             src="https://catalog.polo.blue/_spoko/036129611CD-036129611CE-air-filter_1u98y9.webp" alt="filters"
-            />
-            <h3>Filters</h3>
-        </article>
-        <article>
-            <img
+            src="https://catalog.polo.blue/_spoko/036129611CD-036129611CE-air-filter_1u98y9.webp"
+            alt="filters"
+          />
+        </header>
+        <h3>Filters</h3>
+      </article>
+      <article class="card">
+        <img
+          class="card-image"
+          width="250"
+          src="https://images.pexels.com/photos/8237050/pexels-photo-8237050.jpeg"
+          alt="engine"
+        />
+        <h3>Engine</h3>
+      </article>
+      <article class="card">
+        <header>
+          <img
+            class="card-image"
             width="250"
-             src="https://images.pexels.com/photos/8237050/pexels-photo-8237050.jpeg" alt="engine"
-            />
-            <h3>Engine</h3>
-        </article>
-        <article>
-            <img
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Camshaft_revealed_MG_series_MG_A_twin_camshaft_coup%C3%A9.jpg"
+            alt="camshaft"
+          />
+        </header>
+        <h3>Camshaft</h3>
+      </article>
+      <article class="card">
+        <header>
+          <img
             width="250"
-             src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Camshaft_revealed_MG_series_MG_A_twin_camshaft_coup%C3%A9.jpg" alt="camshaft"
-            />
-            <h3>Camshaft</h3>
-        </article>
-        <article>
-            <img 
+            src="https://attic.sh/kywgd0zry2yx21vjxvgkmn3l0njt"
+            alt="suspension"
+          />
+        </header>
+        <h3>Suspension</h3>
+      </article>
+      <article class="card">
+        <header>
+          <img
+            class="card-image"
             width="250"
-            src="https://attic.sh/kywgd0zry2yx21vjxvgkmn3l0njt" alt="suspension"
-            />
-            <h3>Suspension</h3>
-        </article>
-        <article>
-            <img 
+            src="https://cdn2.picryl.com/photo/1937/12/31/thermo-syphon-cooling-circulation-manual-of-driving-and-maintenance-948dfd-640.jpg"
+            alt="cooling systems"
+          />
+        </header>
+        <h3>Cooling systems</h3>
+      </article>
+      <article class="card">
+        <header>
+          <img
+            class="card-image"
             width="250"
-            src="https://cdn2.picryl.com/photo/1937/12/31/thermo-syphon-cooling-circulation-manual-of-driving-and-maintenance-948dfd-640.jpg" alt="cooling systems"
-            />
-            <h3>Cooling systems</h3>
-        </article>
-        <article>
-            <img 
+            src="https://live.staticflickr.com/7666/17297654622_767e4e8bb0_b.jpg"
+            alt="body parts"
+          />
+        </header>
+        <h3>Body parts</h3>
+      </article>
+      <article class="card">
+        <header>
+          <img
+            class="card-image"
             width="250"
-            src="https://live.staticflickr.com/7666/17297654622_767e4e8bb0_b.jpg" alt="body parts"
-            />
-            <h3>Body parts</h3>
-        </article>
-        <article>
-            <img
-            width="250"
-             src="https://live.staticflickr.com/65535/49645012763_20e3c1e46d_b.jpg" alt="exhaust"
-            />
-            <h3>Exhaust</h3>
-        </article>
+            src="https://live.staticflickr.com/65535/49645012763_20e3c1e46d_b.jpg"
+            alt="exhaust"
+          />
+        </header>
+        <h3>Exhaust</h3>
+      </article>
     </section>
-
     </main>
 
     <footer class="footer-container" aria-label="page-footer">
