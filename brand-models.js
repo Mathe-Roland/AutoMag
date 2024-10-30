@@ -1,7 +1,7 @@
 const brands = document.querySelector("select");
 const carModels = document.querySelector(".car-models"); 
 
-const cardsSelected = document.querySelector(".grid-container-selected-cards");
+const cardsSelected = document.querySelector(".auto-card-grid-container");
 
 
 const toyota=["Prius","Corolla LE","Sienna","Avalon"];

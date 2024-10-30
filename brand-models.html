@@ -8,48 +8,46 @@
       name="description"
       content="Car shop with affordable prices and popular brands like Toyota, Citroen, Peugeot, Volkswagen, Honda, Chevrolet, Tesla and Dacia"
     />
-    <link href="brand-models.css" rel="stylesheet" />
     <link href="common.css" rel="stylesheet" />
+    <link href="brand-models.css" rel="stylesheet" />
   </head>
   <body class="body">
-    <header class="layout-header">
-        <h1>AutoMag</h1>
+    <header class="layout-header" aria-label="page-header">
+      <h1>AutoMag</h1>
       <h2>Your four wheel dealer</h2>
-      <nav>
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">Brands and models</a>
-        <a class="nav-link" href="#">Auto parts</a>
-        <a class="nav-link" href="#">Service</a>
-        <a class="nav-link" href="#">About us</a>
-        <a class="nav-link" href="#">Contact</a>
-      </nav>
     </header>
+    <nav class="sticky-navbar">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="/brand-models.html">Brands and models</a>
+      <a class="nav-link" href="/auto-parts.html">Auto parts</a>
+      <a class="nav-link" href="#">Service</a>
+      <a class="nav-link" href="#">About us</a>
+      <a class="nav-link" href="#">Contact</a>
+    </nav>
 
     <main class="main-content">
-    <section class="brand-models-selector">
-        <select>
-        <option>Select an option</option>
+      <section class="dropdowns-bar" aria-label="select car brand,model">
+        <select aria-label="select-car-brand">
+          <option>Select an option</option>
           <option>Toyota</option>
           <option>Dacia</option>
           <option>Citroen</option>
           <option>Volkswagen</option>
         </select>
-        <select class="car-models">
+        <select class="car-models" aria-label="select-car-models">
           <option>Select car models</option>
-      </select>
-    </section>
-    <section class="grid-container-selected-cards">
-        
-    </section>
+        </select>
+      </section>
+      <section aria-label="specific-cars" class="cards-grid"></section>
     </main>
 
-    <footer class="footer-container">
-      <p>
+    <footer class="footer-container" aria-label="page-footer">
+      <div class="footer-link-container">
         <a class="footer-links" href="#">Terms and Agreements</a>
         <a class="footer-links" href="#">Privacy policy</a>
         <a class="footer-links" href="#">Cookies</a>
         <a class="footer-links" href="#">Contact</a>
-      </p>
+      </div>
       <p>Copyright © AutoMag</p>
     </footer>
   </body>

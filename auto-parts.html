@@ -8,28 +8,28 @@
       name="description"
       content="Car shop with affordable prices and popular brands like Toyota, Citroen, Peugeot, Volkswagen, Honda, Chevrolet, Tesla and Dacia"
     />
-    <link href="auto-parts.css" rel="stylesheet" />
     <link href="common.css" rel="stylesheet" />
+    <link href="auto-parts.css" rel="stylesheet" />
   </head>
   <body class="body">
-    <header class="layout-header">
+    <header class="layout-header" aria-label="page-header">
         <h1>AutoMag</h1>
       <h2>Your four wheel dealer</h2>
-      <nav>
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">Brands and models</a>
-        <a class="nav-link" href="#">Auto parts</a>
-        <a class="nav-link" href="#">Service</a>
-        <a class="nav-link" href="#">About us</a>
-        <a class="nav-link" href="#">Contact</a>
-      </nav>
     </header>
+    <nav class="sticky-navbar">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">Brands and models</a>
+      <a class="nav-link" href="#">Auto parts</a>
+      <a class="nav-link" href="#">Service</a>
+      <a class="nav-link" href="#">About us</a>
+      <a class="nav-link" href="#">Contact</a>
+    </nav>
 
     <main class="main-content">
       
-    <div class="cars-selectors-container">
+    <div class="cars-selectors-container" aria-label="car selectors container">
 
-        <select class="select-brand">
+        <select class="select-brand" aria-label="select brand">
          <option>Select brand</option>
          <option>Toyota</option>
          <option>Dacia</option>
@@ -39,14 +39,14 @@
         <select class="select-model">
          <option>Select model</option>
         </select> 
-        <select class="select-fuel-type">
+        <select class="select-fuel-type" aria-label="select fuel">
          <option> Select fuel type</option>
          <option>Gas</option>
          <option>Diesel</option>
          <option>Electric</option>
          <option>Hybrid</option>
         </select> 
-        <select class="select-engine-displacement">
+        <select class="select-engine-displacement" aria-label="select engine displacement">
          <option>Select engine displacement</option>
          <option>1.2</option>
          <option>1.4</option>
@@ -56,7 +56,7 @@
          <option>2.4</option>
          <option>3.0</option>
         </select> 
-        <select class="select-horsepower">
+        <select class="select-horsepower" aria-label="select horsepower">
          <option>Select horsepower</option>
          <option>90</option>
          <option>100</option>
@@ -71,7 +71,7 @@
 
     </div>
 
-    <section class="hidden">
+    <section class="hidden" aria-label="dropdown from selected cars specications">
         <article>
             <img
             width="250"
@@ -125,13 +125,13 @@
 
     </main>
 
-    <footer class="footer-container">
-      <p>
+    <footer class="footer-container" aria-label="page-footer">
+      <div class="footer-link-container">
         <a class="footer-links" href="#">Terms and Agreements</a>
         <a class="footer-links" href="#">Privacy policy</a>
         <a class="footer-links" href="#">Cookies</a>
         <a class="footer-links" href="#">Contact</a>
-      </p>
+      </div>
       <p>Copyright © AutoMag</p>
     </footer>
   </body>
