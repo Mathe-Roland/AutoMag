@@ -22,7 +22,7 @@ main {
 
 .layout-header h1,
 .layout-header h2 {
-  margin: 20px 15px; 
+  margin: 1.25rem 0.9375rem; 
 }
 
 nav {
@@ -31,7 +31,7 @@ nav {
 
 nav > a {
   display: inline-block;
-  padding: 7px 15px;
+  padding: 0.4375rem 0.9375rem;
   color: #fff;
 }
 
@@ -49,52 +49,52 @@ header > h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
-  padding: 15px;
-  gap: 15px;
+  margin-bottom: 1.25rem;
+  padding: 0.9375rem;
+  gap: 0.9375rem;
 }
 
 .dropdowns-bar > div > select {
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
 main.main-content {
-  padding: 25px;
+  padding: 1.5625rem;
 }
 
 .cards-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 20px;
+  gap: 1.25rem;
   place-items: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 20rem;
 
   overflow: hidden;
-  gap: 20px;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
-  padding: 10px;
+  gap: 1.25rem;
+  box-shadow: 0 0 0.625rem 0 rgba(0,0,0,0.3);
+  padding: 0.625rem;
 }
 
 .card > header {
   display: flex;
   width: 100%;
-  height: 200px;
+  height: 12.5rem;
 }
 
 .card > header > .card-image {
   width: 100%;
-  height: 200px;
+  height: 12.5rem;
 }
 
 .card-main-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .card-main-content > p {
@@ -111,8 +111,8 @@ main.main-content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  font-size: 13px;
+  gap: 0.9375rem;
+  font-size: 0.8125rem;
 }
 
 .footer-container {
@@ -123,7 +123,7 @@ main.main-content {
 
 .footer-link-container{
   display: flex;
-  gap: 15px;
+  gap: 0.9375rem;
 }
 
 .footer-links {
@@ -131,45 +131,45 @@ main.main-content {
 }
 
 h1 {
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 h2 {
-  font-size: 28px;
-  line-height: 30px;
+  font-size: 1.75rem;
+  line-height: 1.875rem;
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
 }
 
 h1,
 h2,
 h3 {
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }
 
 h4 {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 1.375rem;
+  line-height: 1.625rem;
 }
 
 h5 {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.375rem;
 }
 
 h4,
 h5 {
-  margin: 8px 0;
+  margin: 0.5rem 0;
 }
 
 h6 {
-  font-size: 16px;
-  line-height: 20px;
-  margin: 5px 0;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 0.3125rem 0;
 }
 
 .nav-link,
@@ -180,15 +180,19 @@ h6 {
   text-decoration: underline;
 }
 .footer-links:hover{
-  gap: 15px;
+  gap: 0.9375rem;
   text-decoration: underline;
 }
+
+.general-select{
+  padding: 0.3125rem;
+}
+
 
 @media screen and (min-width: 800px) {
   .cards-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
     place-items: center;
   }
 }

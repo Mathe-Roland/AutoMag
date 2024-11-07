@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AutoMag - Your four wheel dealer</title>
     <meta
-      name="description"
-      content="Car shop with affordable prices and popular brands like Toyota, Citroen, Peugeot, Volkswagen, Honda, Chevrolet, Tesla and Dacia"
+    name="description"
+    content="Car shop with affordable prices and popular brands like Toyota, Citroen, Peugeot, Volkswagen, Honda, Chevrolet, Tesla and Dacia"
     />
     <link href="common.css" rel="stylesheet" />
     <link href="auto-parts.css" rel="stylesheet" />
+    <script defer src="auto-parts.js"></script>
   </head>
   <body class="body">
     <header class="layout-header" aria-label="page-header">
-        <h1>AutoMag</h1>
+      <h1>AutoMag</h1>
       <h2>Your four wheel dealer</h2>
     </header>
     <nav class="sticky-navbar">
@@ -27,10 +28,10 @@
 
     <main class="main-content">
       
-    <div class="cars-selectors-container" aria-label="car selectors container">
+    <div class="cars-selectors-container">
       <div>
-        <h3>Brand</h3>
-        <select class="select-brand">
+        <label for="car-brand-dropdown">Car brand</label>
+        <select id="car-brand-dropdown" class="select-brand" aria-label="Select a car brand">
          <option>Select brand</option>
          <option>Toyota</option>
          <option>Dacia</option>
@@ -39,18 +40,18 @@
         </select>     
       </div>
       <div>
-        <h3>
+        <label for="car-model-dropdown">
           Model
-        </h3>
-        <select class="select-model">
+        </label>
+        <select id="car-model-dropdown" class="select-model general-select"  aria-label="Select a model">
          <option>Select model</option>
         </select> 
       </div>
       <div>
-        <h3>
+        <label for="fuel-type-dropwdown">
           Fuel type
-        </h3>
-        <select class="select-fuel-type">
+        </label>
+        <select  id="fuel-type-dropwdown" class="select-fuel-type general-select" aria-label="Select fuel type">
          <option> Select fuel type</option>
          <option>Gas</option>
          <option>Diesel</option>
@@ -59,10 +60,10 @@
         </select> 
       </div>
       <div>
-        <h3>
+        <label for="engine-displacement-dropdown">
           Engine displacement
-        </h3>
-        <select class="select-engine-displacement">
+        </label>
+        <select id="engine-displacement-dropdown" class="select-engine-displacement general-select" aria-label="Select engine displacement">
          <option>Select engine displacement</option>
          <option>1.2</option>
          <option>1.4</option>
@@ -74,10 +75,10 @@
         </select> 
       </div>
       <div>
-        <h3>
+        <label for="horsepower-dropdown">
           Horsepower
-        </h3>
-        <select class="select-horsepower">
+        </label>
+        <select id="horsepower-dropdown" class="select-horsepower general-select" aria-label="Select horsepower">
          <option>Select horsepower</option>
          <option>90</option>
          <option>100</option>
@@ -90,11 +91,9 @@
          <option>300</option>
         </select> 
       </div>
-
     </div>
 
-    
-    <section class="cards-grid hidden" aria-label="dropdown from selected cars specications">
+    <section class="cards-grid hidden">
       <article class="card">
         <header>
           <img
@@ -172,7 +171,7 @@
     </section>
     </main>
 
-    <footer class="footer-container" aria-label="page-footer">
+    <footer class="footer-container">
       <div class="footer-link-container">
         <a class="footer-links" href="#">Terms and Agreements</a>
         <a class="footer-links" href="#">Privacy policy</a>
@@ -182,5 +181,4 @@
       <p>Copyright © AutoMag</p>
     </footer>
   </body>
-  <script src="auto-parts.js"></script>
 </html>

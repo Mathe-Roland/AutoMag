@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AutoMag - Your four wheel dealer</title>
     <meta
-      name="description"
-      content="Car shop with affordable prices and popular brands like Toyota, Citroen, Peugeot, Volkswagen, Honda, Chevrolet, Tesla and Dacia"
+    name="description"
+    content="Car shop with affordable prices and popular brands like Toyota, Citroen, Peugeot, Volkswagen, Honda, Chevrolet, Tesla and Dacia"
     />
     <link href="common.css" rel="stylesheet" />
     <link href="brand-models.css" rel="stylesheet" />
+    <script defer src="brand-models.js"></script>
   </head>
   <body class="body">
-    <header class="layout-header" aria-label="page-header">
+    <header class="layout-header">
       <h1>AutoMag</h1>
       <h2>Your four wheel dealer</h2>
     </header>
@@ -26,11 +27,13 @@
     </nav>
 
     <main class="main-content">
-      <section class="dropdowns-bar" aria-label="select car brand,model">
+      <h3>
+        Cars by brand and model
+      </h3>
+      <section class="dropdowns-bar">
         <div>
-          
-          <h3>Car brand</h3>
-          <select>
+          <label for="car-brand-dropdown">Car brand</label>
+          <select id="car-brand-dropdown" aria-label="Select a car brand">
             <option>Select an option</option>
             <option>Toyota</option>
             <option>Dacia</option>
@@ -39,13 +42,13 @@
           </select>
         </div>
         <div>
-          <h3>Car models</h3>
-          <select>
+          <label for="car-model-dropdown">Car models</label>
+          <select id="car-model-dropdown" aria-label="Select a model">
             <option>Select car models</option>
           </select>
         </div>
       </section>
-      <section aria-label="specific-cars" class="cards-grid"></section>
+      <section class="cards-grid"></section>
     </main>
 
     <footer class="footer-container" aria-label="page-footer">
@@ -58,5 +61,4 @@
       <p>Copyright © AutoMag</p>
     </footer>
   </body>
-  <script src="brand-models.js"></script>
 </html>

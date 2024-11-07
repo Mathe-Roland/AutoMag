@@ -1,5 +1,5 @@
 .price-individual-card {
-  font-size: 32px;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -12,10 +12,10 @@
 }
 
 .card-buttons {
-  width: 120px;
-  height: 50px;
+  width: 7.5rem;
+  height: 3.125rem;
   background-color: rgba(33, 173, 87, 0.623);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: none;
 }
 
@@ -27,5 +27,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
+}
+
+.dropdowns-bar > div{
+  display: flex;
+  flex-direction: column;
 }
