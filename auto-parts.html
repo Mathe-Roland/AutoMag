@@ -10,9 +10,13 @@
     />
     <link href="common.css" rel="stylesheet" />
     <link href="auto-parts.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <script defer src="auto-parts.js"></script>
   </head>
-  <body class="body">
+  <body class="body auto-parts-page">
     <header class="layout-header" aria-label="page-header">
       <h1>AutoMag</h1>
       <h2>Your four wheel dealer</h2>
@@ -31,7 +35,7 @@
     <div class="cars-selectors-container">
       <div>
         <label for="car-brand-dropdown">Car brand</label>
-        <select id="car-brand-dropdown" class="select-brand" aria-label="Select a car brand">
+        <select id="car-brand-dropdown" class="general-select select-brand" aria-label="Select a car brand">
          <option>Select brand</option>
          <option>Toyota</option>
          <option>Dacia</option>
@@ -43,7 +47,7 @@
         <label for="car-model-dropdown">
           Model
         </label>
-        <select id="car-model-dropdown" class="select-model general-select"  aria-label="Select a model">
+        <select id="car-model-dropdown" class="general-select select-model"  aria-label="Select a model">
          <option>Select model</option>
         </select> 
       </div>
@@ -51,7 +55,7 @@
         <label for="fuel-type-dropwdown">
           Fuel type
         </label>
-        <select  id="fuel-type-dropwdown" class="select-fuel-type general-select" aria-label="Select fuel type">
+        <select  id="fuel-type-dropwdown" class="general-select select-fuel-type" aria-label="Select fuel type">
          <option> Select fuel type</option>
          <option>Gas</option>
          <option>Diesel</option>
@@ -63,7 +67,7 @@
         <label for="engine-displacement-dropdown">
           Engine displacement
         </label>
-        <select id="engine-displacement-dropdown" class="select-engine-displacement general-select" aria-label="Select engine displacement">
+        <select id="engine-displacement-dropdown" class="general-select select-engine-displacement " aria-label="Select engine displacement">
          <option>Select engine displacement</option>
          <option>1.2</option>
          <option>1.4</option>
@@ -78,7 +82,7 @@
         <label for="horsepower-dropdown">
           Horsepower
         </label>
-        <select id="horsepower-dropdown" class="select-horsepower general-select" aria-label="Select horsepower">
+        <select id="horsepower-dropdown" class=" general-select select-horsepower" aria-label="Select horsepower">
          <option>Select horsepower</option>
          <option>90</option>
          <option>100</option>
