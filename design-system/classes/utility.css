@@ -1,0 +1,35 @@
+.hidden {
+    display: none;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-column-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  
+.sticky-top {
+    position: sticky;
+    top: 0;
+  }
+  
+  .fixed-top {
+    position: fixed;
+    top: 0;
+  }
+  

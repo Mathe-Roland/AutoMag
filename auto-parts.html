@@ -17,14 +17,14 @@
     <script defer src="auto-parts.js"></script>
   </head>
   <body class="body auto-parts-page">
-    <header class="layout-header" aria-label="page-header">
-      <h1>AutoMag</h1>
-      <h2>Your four wheel dealer</h2>
+    <header class="layout-header">
+      <h1 class="animation-for-main-title">AutoMag</h1>
+      <h2 class="animation-for-main-title">Your four wheel dealer</h2>
     </header>
-    <nav class="sticky-navbar">
-      <a class="nav-link" href="#">Home</a>
-      <a class="nav-link" href="#">Brands and models</a>
-      <a class="nav-link" href="#">Auto parts</a>
+    <nav class="sticky-navbar animation-for-navbar">
+      <a class="nav-link" href="/index.html">Home</a>
+      <a class="nav-link" href="/brand-models.html">Brands and models</a>
+      <a class="nav-link" href="/auto-parts.html">Auto parts</a>
       <a class="nav-link" href="#">Service</a>
       <a class="nav-link" href="#">About us</a>
       <a class="nav-link" href="#">Contact</a>
@@ -33,7 +33,7 @@
     <main class="main-content">
       
     <div class="cars-selectors-container">
-      <div>
+      <div class="flex-column gap-dropdowns margin-right">
         <label for="car-brand-dropdown">Car brand</label>
         <select id="car-brand-dropdown" class="general-select select-brand" aria-label="Select a car brand">
          <option>Select brand</option>
@@ -43,15 +43,15 @@
          <option>Volkswagen</option>
         </select>     
       </div>
-      <div>
-        <label for="car-model-dropdown">
+      <div class="flex-column gap-dropdowns margin-right">
+        <label for="car-model-dropdown gap-dropdowns margin-right">
           Model
         </label>
         <select id="car-model-dropdown" class="general-select select-model"  aria-label="Select a model">
          <option>Select model</option>
         </select> 
       </div>
-      <div>
+      <div class="flex-column gap-dropdowns margin-right">
         <label for="fuel-type-dropwdown">
           Fuel type
         </label>
@@ -63,7 +63,7 @@
          <option>Hybrid</option>
         </select> 
       </div>
-      <div>
+      <div class="flex-column gap-dropdowns margin-right">
         <label for="engine-displacement-dropdown">
           Engine displacement
         </label>
@@ -78,7 +78,7 @@
          <option>3.0</option>
         </select> 
       </div>
-      <div>
+      <div class="flex-column gap-dropdowns margin-right">
         <label for="horsepower-dropdown">
           Horsepower
         </label>

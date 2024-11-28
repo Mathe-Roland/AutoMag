@@ -18,11 +18,11 @@
   </head>
   <body class="body">
     <header class="layout-header">
-      <h1>AutoMag</h1>
-      <h2>Your four wheel dealer</h2>
+      <h1 class="animation-for-main-title">AutoMag</h1>
+      <h2 class="animation-for-main-title">Your four wheel dealer</h2>
     </header>
-    <nav class="sticky-navbar">
-      <a class="nav-link" href="/">Home</a>
+    <nav class="sticky-navbar animation-for-navbar">
+      <a class="nav-link" href="/index.html">Home</a>
       <a class="nav-link" href="/brand-models.html">Brands and models</a>
       <a class="nav-link" href="/auto-parts.html">Auto parts</a>
       <a class="nav-link" href="#">Service</a>
@@ -35,7 +35,7 @@
         Cars by brand and model
       </h3>
       <section class="dropdowns-bar">
-        <div>
+        <div class="flex-column gap-dropdowns margin-right">
           <label for="car-brand-dropdown">Car brand</label>
           <select id="car-brand-dropdown" aria-label="Select a car brand">
             <option>Select an option</option>
@@ -45,7 +45,7 @@
             <option>Volkswagen</option>
           </select>
         </div>
-        <div>
+        <div class="flex-column gap-dropdowns">
           <label for="car-model-dropdown">Car models</label>
           <select id="car-model-dropdown" aria-label="Select a model">
             <option>Select car models</option>

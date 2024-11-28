@@ -1,3 +1,6 @@
+@import url('./design-system/classes/utility.css');
+@import url('./design-system/classes/margin.css');
+
 .price-individual-card {
   font-size: 2rem;
   text-align: center;

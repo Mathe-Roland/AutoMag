@@ -1,3 +1,6 @@
+@import url('./design-system/classes/utility.css');
+@import url('./design-system/classes/margin.css');
+
 .auto-parts-page .cards-grid.hidden {
     display: none;
 }

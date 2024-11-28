@@ -1,0 +1,22 @@
+@keyframes animation-for-main-title {
+
+    0%{
+      transform: translateX(-1000px);
+    }
+  
+    100%{
+      transform: translate(0px);
+    }
+  
+  }
+  
+  @keyframes animation-for-navbar {
+    0%{
+      transform: translateY(-1000px);
+    }
+  
+    100%{
+      transform: translateY(0px);
+    }
+    
+  }

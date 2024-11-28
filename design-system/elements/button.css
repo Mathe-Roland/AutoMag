@@ -1,0 +1,12 @@
+
+.card-buttons {
+    width: 7.5rem;
+    height: 3.125rem;
+    background-color:var(--color-button);
+    border-radius: 0.5rem;
+    border: none;
+  }
+  
+  .card-buttons:hover {
+    background-color: var(--color-button-hover);
+  }

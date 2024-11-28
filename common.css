@@ -1,14 +1,30 @@
+@import url('./design-system/variables/colors.css');
+@import url('./design-system/variables/fonts.css');
+@import url('./design-system/variables/sizes.css');
+@import url('./design-system/variables/z-index.css');
+@import url('./design-system/elements/reset.css');
+@import url('./design-system/elements/elements.css');
+@import url('./design-system/elements/button.css');
+@import url('./design-system/elements/card.css');
+
+
+@import url('./design-system/classes/margin.css');
+@import url('./design-system/animations/animation-for-header.css');
+@import url('./design-system/classes/utility.css');
+
+
+
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Montserrat",Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
   margin: 0;
   min-height: 100vh;
 }
 
 main {
   flex: 1;
-  background: linear-gradient(to right, #cbd9cd 5%, #ffff 50%, #cbd9cd 95%);
+  background: var(--color-main-background)
 }
 
 
@@ -61,7 +77,7 @@ header > h2 {
 }
 
 main.main-content {
-  padding: 1.5625rem;
+  padding: var(--padding-main);
 }
 
 .cards-grid {
@@ -69,44 +85,6 @@ main.main-content {
   grid-template-columns: 1fr;
   gap: 1.25rem;
   place-items: center;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  width: 20rem;
-
-  overflow: hidden;
-  gap: 1.25rem;
-  box-shadow: 0 0 0.625rem 0 rgba(0,0,0,0.3);
-  padding: 0.625rem;
-  background: #fff;
-}
-
-.card > header {
-  display: flex;
-  width: 100%;
-  height: 12.5rem;
-}
-
-.card > header > .card-image {
-  width: 100%;
-  height: 12.5rem;
-}
-
-.card-main-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.card-main-content > p {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  margin: 0;
 }
 
 .footer-container {
@@ -133,20 +111,6 @@ main.main-content {
   color: inherit;
 }
 
-h1 {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-h2 {
-  font-size: 1.75rem;
-  line-height: 1.875rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  line-height: 1.875rem;
-}
 
 h1,
 h2,
@@ -154,26 +118,12 @@ h3 {
   margin: 0.625rem 0;
 }
 
-h4 {
-  font-size: 1.375rem;
-  line-height: 1.625rem;
-}
-
-h5 {
-  font-size: 18px;
-  line-height: 1.375rem;
-}
 
 h4,
 h5 {
   margin: 0.5rem 0;
 }
 
-h6 {
-  font-size: 1rem;
-  line-height: 1.25rem;
-  margin: 0.3125rem 0;
-}
 
 .nav-link,
 .footer-links {
@@ -191,6 +141,13 @@ h6 {
   padding: 0.3125rem;
 }
 
+.animation-for-main-title{
+  animation: animation-for-main-title 0.8s ease-in 0.2s 1;
+}
+
+.animation-for-navbar{
+  animation: animation-for-navbar 0.8s ease-in-out 0.2s 1;;
+}
 
 @media screen and (min-width: 800px) {
   .cards-grid {
@@ -208,3 +165,6 @@ h6 {
       place-items: center;
     }
   }
+
+
+
