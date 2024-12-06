@@ -1,0 +1,52 @@
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    place-items: center;
+  }
+
+
+  .details-and-buy-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  
+.auto-parts-page .cars-selectors-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+  @media screen and (min-width: 800px) {
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-items: center;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+      .cards-grid {
+        place-self: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+      }
+    }
+  
+  
+  
+  

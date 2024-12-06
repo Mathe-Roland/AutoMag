@@ -10,3 +10,21 @@
 .margin-right{
     margin-right: 1.5rem;
 }
+
+.price-individual-card {
+    font-size: var(--font-size-price);
+    text-align: center;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0.625rem 0;
+  }
+  
+  
+  h4,
+  h5 {
+    margin: 0.5rem 0;
+  }
+  

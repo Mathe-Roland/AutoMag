@@ -10,3 +10,10 @@
   .card-buttons:hover {
     background-color: var(--color-button-hover);
   }
+
+  .details-and-buy-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+  }

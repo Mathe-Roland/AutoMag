@@ -35,3 +35,8 @@
     overflow: hidden;
     margin: 0;
   }
+
+  .auto-parts-page .cards-grid.hidden {
+    display: none;
+  }
+  

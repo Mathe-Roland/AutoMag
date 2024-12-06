@@ -20,3 +20,13 @@
     }
     
   }
+
+  .animation-for-main-title{
+    animation: animation-for-main-title 0.8s ease-in 0.2s 1;
+  }
+  
+  .animation-for-navbar{
+    animation: animation-for-navbar 0.8s ease-in-out 0.2s 1;;
+  }
+  
+  
