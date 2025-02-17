@@ -1,6 +1,7 @@
 import { carModelDropDown } from "./cars-mock.js";
 import { engineOptions } from "./engine-mock.js";
 
+const container=document.querySelector(".cars-selectors-container");
 const brandSelector=document.querySelector(".select-brand");
 const modelSelector=document.querySelector(".select-model");
 const fuelTypeSelector=document.querySelector(".select-fuel-type");
@@ -93,8 +94,9 @@ const selectmodelSelector = (e) => {
 
 brandSelector.addEventListener("change", selectmodelSelector);
 
-brandSelector.addEventListener("change", showSpecifications);
-modelSelector.addEventListener("change",showSpecifications)
-fuelTypeSelector.addEventListener("change",showSpecifications)
-engineDisplacementSelector.addEventListener("change",showSpecifications)
-horsepowerSelector.addEventListener("change",showSpecifications)
+container.addEventListener("change",(event)=>{
+
+    if(event.target.tagName==="SELECT"){
+        showSpecifications();
+    }
+})
