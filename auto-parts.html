@@ -9,12 +9,15 @@
     content="Car shop with affordable prices and popular brands like Toyota, Citroen, Peugeot, Volkswagen, Honda, Chevrolet, Tesla and Dacia"
     />
     <link href="common.css" rel="stylesheet" />
-    <link href="auto-parts.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <script defer src="auto-parts.js"></script>
+    <script type="module" src="cars-mock.js"></script>
+    <script type="module" src="engine-mock.js"></script>
+    <script type="module" src="auto-parts.js"></script>
+    <script type="module" src="script-global.js"></script>
+
   </head>
   <body class="body auto-parts-page">
     <header class="layout-header">
@@ -36,11 +39,7 @@
       <div class="flex-column gap-dropdowns margin-right">
         <label for="car-brand-dropdown">Car brand</label>
         <select id="car-brand-dropdown" class="general-select select-brand" aria-label="Select a car brand">
-         <option>Select brand</option>
-         <option>Toyota</option>
-         <option>Dacia</option>
-         <option>Citroen</option>
-         <option>Volkswagen</option>
+          <option>Select brand</option>
         </select>     
       </div>
       <div class="flex-column gap-dropdowns margin-right">
@@ -48,7 +47,7 @@
           Model
         </label>
         <select id="car-model-dropdown" class="general-select select-model"  aria-label="Select a model">
-         <option>Select model</option>
+          <option>Select model</option>
         </select> 
       </div>
       <div class="flex-column gap-dropdowns margin-right">
@@ -57,10 +56,6 @@
         </label>
         <select  id="fuel-type-dropwdown" class="general-select select-fuel-type" aria-label="Select fuel type">
          <option> Select fuel type</option>
-         <option>Gas</option>
-         <option>Diesel</option>
-         <option>Electric</option>
-         <option>Hybrid</option>
         </select> 
       </div>
       <div class="flex-column gap-dropdowns margin-right">
@@ -69,13 +64,6 @@
         </label>
         <select id="engine-displacement-dropdown" class="general-select select-engine-displacement " aria-label="Select engine displacement">
          <option>Select engine displacement</option>
-         <option>1.2</option>
-         <option>1.4</option>
-         <option>1.6</option>
-         <option>1.8</option>
-         <option>2.0</option>
-         <option>2.4</option>
-         <option>3.0</option>
         </select> 
       </div>
       <div class="flex-column gap-dropdowns margin-right">
@@ -84,15 +72,6 @@
         </label>
         <select id="horsepower-dropdown" class=" general-select select-horsepower" aria-label="Select horsepower">
          <option>Select horsepower</option>
-         <option>90</option>
-         <option>100</option>
-         <option>120</option>
-         <option>140</option>
-         <option>160</option>
-         <option>180</option>
-         <option>200</option>
-         <option>250</option>
-         <option>300</option>
         </select> 
       </div>
     </div>

@@ -1,14 +1,18 @@
+import { carModelDropDown } from "./cars-mock.js";
+import { engineOptions } from "./engine-mock.js";
+
 const brandSelector=document.querySelector(".select-brand");
 const modelSelector=document.querySelector(".select-model");
 const fuelTypeSelector=document.querySelector(".select-fuel-type");
-const engineDisplacementSeceltor=document.querySelector(".select-engine-displacement");
+const engineDisplacementSelector=document.querySelector(".select-engine-displacement");
 const horsepowerSelector=document.querySelector(".select-horsepower");
 const displayAfterSpecifications=document.querySelector(".hidden");
 
 
+
 const showSpecifications=()=>{
 
-    if(fuelTypeSelector.value!=="Select fuel type" && engineDisplacementSeceltor.value!=="Select engine displacement"
+    if(fuelTypeSelector.value!=="Select fuel type" && engineDisplacementSelector.value!=="Select engine displacement"
          && horsepowerSelector.value!=="Select horsepower" 
         && brandSelector.value!=="Select brand"){
     
@@ -22,19 +26,62 @@ const showSpecifications=()=>{
 }
 
 
-const toyota=["Prius","Corolla","Sienna","Avalon"];
-const dacia=["Duster","Logan","Sandero","Dokker"];
-const citroen=["C3","C4","C1","Berlingo"];
-const volkswagen=["Golf","Polo","ID.4","Atlas"];
+const initializeCars=()=>{
+
+    brandSelector.innerHTML="";
+
+  for(let key in carModelDropDown){
+
+      const item=document.createElement("option");
+      item.textContent=key;
+      item.value=key;
+      brandSelector.appendChild(item);
+  };
+
+};
+
+
+
+const initializeCarModels=()=>{
+
+    modelSelector.innerHTML="";
+  carModelDropDown[brandSelector.value].forEach(e=>{
+    
+    const item=document.createElement("option");
+    item.textContent=e.toLowerCase();
+    item.value=e.toLowerCase();
+    modelSelector.appendChild(item);
+  })
+};
+
+
+const populateEngine=(option,appendedElement)=>{
+
+        appendedElement.innerHTML="";
+        option.forEach(e=>{
+        
+        const item=document.createElement("option")
+        item.textContent=e;
+        item.value=e;
+        appendedElement.appendChild(item);
+      })
+    };
+    
+initializeCars();
+initializeCarModels();
+populateEngine(engineOptions.fuelTypeOptions,fuelTypeSelector);
+populateEngine(engineOptions.horsepowerOptions,horsepowerSelector);
+populateEngine(engineOptions.engineDisplacementOptions,engineDisplacementSelector);
+
 
 const selectmodelSelector = (e) => {
     const item = e.target.value;  
 
+    console.log(item);
+
     modelSelector.innerHTML="";
 
-    if (item === "Toyota") {
-
-        toyota.forEach((e)=>{
+        carModelDropDown[item].forEach((e)=>{
 
             const option=document.createElement("option");
             option.textContent=e;
@@ -42,34 +89,6 @@ const selectmodelSelector = (e) => {
             modelSelector.appendChild(option);
         })
         
-        
-    } else if (item === "Dacia") {
-        dacia.forEach((e)=>{
-
-            const option=document.createElement("option");
-            option.textContent=e;
-            option.value=e.toLowerCase();
-            modelSelector.appendChild(option);
-        })
-    } else if (item === "Citroen") {
-        citroen.forEach((e)=>{
-
-            const option=document.createElement("option");
-            option.textContent=e;
-            option.value=e.toLowerCase();
-            modelSelector.appendChild(option);
-        })
-        
-    } else if (item === "Volkswagen") {
-        volkswagen.forEach((e)=>{
-
-            const option=document.createElement("option");
-            option.textContent=e;
-            option.value=e.toLowerCase();
-            modelSelector.appendChild(option);
-        })
-        
-    }
 };
 
 brandSelector.addEventListener("change", selectmodelSelector);
@@ -77,5 +96,5 @@ brandSelector.addEventListener("change", selectmodelSelector);
 brandSelector.addEventListener("change", showSpecifications);
 modelSelector.addEventListener("change",showSpecifications)
 fuelTypeSelector.addEventListener("change",showSpecifications)
-engineDisplacementSeceltor.addEventListener("change",showSpecifications)
+engineDisplacementSelector.addEventListener("change",showSpecifications)
 horsepowerSelector.addEventListener("change",showSpecifications)
