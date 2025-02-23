@@ -1,0 +1,17 @@
+@import url('./animations/animation-for-header.css');
+@import url('./classes/containers.css');
+@import url('./classes/margin.css');
+@import url('./classes/utility.css');
+@import url('./components/card.css');
+@import url('./components/dropdowns.css');
+@import url('./components/footer.css');
+@import url('./components/navbar.css');
+@import url('./elements/button.css');
+
+@import url('./elements/button.css');
+@import url('./elements/header.css');
+@import url('./elements/select.css');
+@import url('./variables/colors.css');
+@import url('./variables/fonts.css');
+@import url('./variables/sizes.css');
+@import url('./variables/z-index.css');

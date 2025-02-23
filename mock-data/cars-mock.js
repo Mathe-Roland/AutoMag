@@ -1,90 +1,77 @@
-
-
-export const carModelDropDown={
-  toyota:["Prius","Corolla LE","Sienna","Avalon"],
-  dacia:["Duster","Logan","Sandero","Dokker"],
-  citroen:["C3","C4","C1","Berlingo"],
-  volkswagen:["Golf","Polo","ID.4","Atlas"],
-}
-
-
 export const listOfCars = [
-    {
-      Toyota: {
-        Models: [
-          {
-            title: "Corolla LE",
-            description: `The Toyota Corolla LE is a mid-level trim of the popular Corolla lineup, 
-                offering a blend of comfort, practicality, and advanced technology. Known for its fuel efficiency 
-                and reliability, the Corolla LE features a sleek exterior design with LED headlights and 16-inch 
-                alloy wheels. Inside, the cabin is spacious and well-appointed, with premium fabric seats, 
-                automatic climate control, and a user-friendly 8-inch touchscreen display equipped with Apple 
-                CarPlay and Android Auto. The Corolla LE also includes advanced safety features through Toyota 
-                Safety Sense, such as lane departure warning, adaptive cruise control, and pre-collision braking, 
-                making it a top choice for daily commutes and long drives. With excellent fuel economy and a 
-                reputation for longevity, the Corolla LE is a smart, affordable option for those seeking a well-rounded 
-                compact sedan.`,
-            price: "21,000 EUR"
-          },
-        ]
-      }
-    },
-    {
-      Citroën: {
-        Models: [
-          {
-            title: "C3",
-            description: `Design: The Citroën C3 features a unique and modern aesthetic, 
-                characterized by its rounded shapes, bold front grille, and distinctive headlight design. 
-                Its colorful and customizable exterior options allow buyers to personalize their vehicles, 
-                making it stand out in the subcompact segment. The roof can often be contrasted with the body color, 
-                enhancing its playful character. Interior Comfort: Inside, the C3 is designed with 
-                comfort and practicality in mind. The cabin offers a spacious feel with ample headroom and legroom 
-                for both front and rear passengers. The seats are designed for comfort during longer journeys, 
-                and the materials used provide a pleasant ambiance. Technology and Infotainment: The C3 comes 
-                equipped with a user-friendly infotainment system that typically includes a touchscreen display, 
-                Bluetooth connectivity, and smartphone integration options like Apple CarPlay and Android Auto. 
-                Higher trims may offer additional features such as navigation and premium sound systems. 
-                Engine Options: The Citroën C3 offers a range of petrol and diesel engine options, 
-                providing a balance of performance and fuel efficiency. Common engine choices include 
-                a 1.2-liter PureTech petrol engine and 1.5-liter BlueHDi diesel engine. The C3 is designed 
-                to deliver a smooth driving experience, making it suitable for both city and highway driving.`,
-            price: "23,000 EUR"
-          },
-        ]
-      }
-    },
-    {
-      Peugeot: {
-        Models: [
-          {
-            title: "208",
-            description: `Design: The Peugeot 208 showcases a distinctive and contemporary design, 
-                characterized by its sleek lines, bold front grille, and signature LED daytime running lights. 
-                The overall aesthetic is sporty yet elegant, appealing to a wide range of buyers. The 
-                hatchback silhouette provides practicality while maintaining a youthful look. Interior Quality: 
-                Inside, the 208 features a modern and well-designed cabin, with high-quality materials and attention 
-                to detail. The layout is driver-focused, with an intuitive dashboard that incorporates a digital 
-                instrument cluster and a central touchscreen for infotainment controls. The interior is spacious 
-                for a subcompact car, offering comfortable seating for five passengers. Technology: The 208 is 
-                equipped with advanced technology features, including a touchscreen infotainment system with Apple 
-                CarPlay and Android Auto compatibility, Bluetooth connectivity, and USB ports. Higher trims may include 
-                additional features such as navigation, premium audio systems, and advanced driver assistance technologies. 
-                Engine Options: The Peugeot 208 offers a range of efficient petrol and diesel engines, designed to provide 
-                a balance of performance and fuel economy. Engine options typically include a 1.2-liter PureTech petrol engine 
-                and 1.5-liter BlueHDi diesel engine, with power outputs suitable for both city driving and longer journeys. 
-                The 208 also offers an all-electric variant, the e-208, which delivers zero-emission driving with an impressive range.`,
-            price: "25,000 EUR"
-          },
-        ]
-      }
-    },
-    {
-      Dacia: {
-        Models: [
-          {
-            title: "Sandero",
-            description: `Affordability: One of the standout features of the Dacia Sandero
+  {
+    name: 'Toyota',
+    models: [
+      {
+        title: 'Corolla LE',
+        description: `The Toyota Corolla LE is a mid-level trim of the popular Corolla lineup, 
+              offering a blend of comfort, practicality, and advanced technology. Known for its fuel efficiency 
+              and reliability, the Corolla LE features a sleek exterior design with LED headlights and 16-inch 
+              alloy wheels. Inside, the cabin is spacious and well-appointed, with premium fabric seats, 
+              automatic climate control, and a user-friendly 8-inch touchscreen display equipped with Apple 
+              CarPlay and Android Auto. The Corolla LE also includes advanced safety features through Toyota 
+              Safety Sense, such as lane departure warning, adaptive cruise control, and pre-collision braking, 
+              making it a top choice for daily commutes and long drives. With excellent fuel economy and a 
+              reputation for longevity, the Corolla LE is a smart, affordable option for those seeking a well-rounded 
+              compact sedan.`,
+        price: '21,000 EUR',
+      },
+    ],
+  },
+  {
+    name: 'Citroën',
+    models: [
+      {
+        title: 'C3',
+        description: `Design: The Citroën C3 features a unique and modern aesthetic, 
+          characterized by its rounded shapes, bold front grille, and distinctive headlight design. 
+          Its colorful and customizable exterior options allow buyers to personalize their vehicles, 
+          making it stand out in the subcompact segment. The roof can often be contrasted with the body color, 
+          enhancing its playful character. Interior Comfort: Inside, the C3 is designed with 
+          comfort and practicality in mind. The cabin offers a spacious feel with ample headroom and legroom 
+          for both front and rear passengers. The seats are designed for comfort during longer journeys, 
+          and the materials used provide a pleasant ambiance. Technology and Infotainment: The C3 comes 
+          equipped with a user-friendly infotainment system that typically includes a touchscreen display, 
+          Bluetooth connectivity, and smartphone integration options like Apple CarPlay and Android Auto. 
+          Higher trims may offer additional features such as navigation and premium sound systems. 
+          Engine Options: The Citroën C3 offers a range of petrol and diesel engine options, 
+          providing a balance of performance and fuel efficiency. Common engine choices include 
+          a 1.2-liter PureTech petrol engine and 1.5-liter BlueHDi diesel engine. The C3 is designed 
+          to deliver a smooth driving experience, making it suitable for both city and highway driving.`,
+        price: '23,000 EUR',
+      },
+    ],
+  },
+  {
+    name: 'Peugeot',
+    models: [
+      {
+        title: '208',
+        description: `Design: The Peugeot 208 showcases a distinctive and contemporary design, 
+          characterized by its sleek lines, bold front grille, and signature LED daytime running lights. 
+          The overall aesthetic is sporty yet elegant, appealing to a wide range of buyers. The 
+          hatchback silhouette provides practicality while maintaining a youthful look. Interior Quality: 
+          Inside, the 208 features a modern and well-designed cabin, with high-quality materials and attention 
+          to detail. The layout is driver-focused, with an intuitive dashboard that incorporates a digital 
+          instrument cluster and a central touchscreen for infotainment controls. The interior is spacious 
+          for a subcompact car, offering comfortable seating for five passengers. Technology: The 208 is 
+          equipped with advanced technology features, including a touchscreen infotainment system with Apple 
+          CarPlay and Android Auto compatibility, Bluetooth connectivity, and USB ports. Higher trims may include 
+          additional features such as navigation, premium audio systems, and advanced driver assistance technologies. 
+          Engine Options: The Peugeot 208 offers a range of efficient petrol and diesel engines, designed to provide 
+          a balance of performance and fuel economy. Engine options typically include a 1.2-liter PureTech petrol engine 
+          and 1.5-liter BlueHDi diesel engine, with power outputs suitable for both city driving and longer journeys. 
+          The 208 also offers an all-electric variant, the e-208, which delivers zero-emission driving with an impressive range.`,
+        price: '25,000 EUR',
+      },
+    ],
+  },
+  {
+    name: 'Dacia',
+    models: [
+      {
+        title: 'Sandero',
+        description: `Affordability: One of the standout features of the Dacia Sandero
                 is its low starting price, offering a practical alternative for
                 those seeking a new car without breaking the bank. The Sandero is
                 often recognized as one of the most affordable cars in Europe,
@@ -106,17 +93,16 @@ export const listOfCars = [
                 with Bluetooth connectivity, USB ports, and options for
                 navigation. While not as advanced as some competitors, it provides
                 the essential features for modern driving.`,
-            price: "12,000 EUR"
-          },
-        ]
-      }
-    },
-    {
-      Volkswagen: {
-        Models: [
-          {
-            title: "Golf 5",
-            description: `Engine Options: The Golf 5 was available with a variety of engine
+        price: '12,000 EUR',
+      },
+    ],
+  },
+  {
+    name: 'Volkswagen',
+    models: [
+      {
+        title: 'Golf 5',
+        description: `Engine Options: The Golf 5 was available with a variety of engine
                 options, including efficient petrol and diesel engines. Petrol
                 engines ranged from a 1.4-liter to a more powerful 2.0-liter in
                 the GTI model, while diesel options included the 1.9 TDI and 2.0
@@ -142,17 +128,16 @@ export const listOfCars = [
                 features like satellite navigation, parking sensors, and cruise
                 control. Higher trims offered luxury touches such as leather seats
                 and a sunroof.`,
-            price: "8,000 EUR"
-          },
-        ]
-      }
-    },
-    {
-      Honda: {
-        Models: [
-          {
-            title: "CR-V",
-            description: `Powertrain and Efficiency: The Honda CR-V offers two primary
+        price: '8,000 EUR',
+      },
+    ],
+  },
+  {
+    name: 'Honda',
+    models: [
+      {
+        title: 'CR-V',
+        description: `Powertrain and Efficiency: The Honda CR-V offers two primary
                 engine options, including a standard 1.5-liter turbocharged
                 4-cylinder engine that produces 190 horsepower and provides
                 excellent fuel efficiency. Additionally, there is a hybrid version
@@ -177,17 +162,16 @@ export const listOfCars = [
                 (automatic emergency braking), lane-keeping assist, road departure
                 mitigation, and forward collision warning. These features enhance
                 both convenience and safety while driving.`,
-            price: "30,000 EUR"
-          },
-        ]
-      }
-    },
-    {
-        Chevrolet: {
-        Models: [
-          {
-            title: "Silverado",
-            description: `Powerful Engine Options: The Silverado offers a wide variety of
+        price: '30,000 EUR',
+      },
+    ],
+  },
+  {
+    name: 'Chevrolet',
+    models: [
+      {
+        title: 'Silverado',
+        description: `Powerful Engine Options: The Silverado offers a wide variety of
               engine choices, ranging from an efficient 2.7L turbocharged
               4-cylinder to a robust 6.2L V8 engine, delivering up to 420
               horsepower. For those seeking fuel economy, a 3.0L Duramax
@@ -216,17 +200,16 @@ export const listOfCars = [
               rearview camera. Some models also come with adaptive cruise
               control and blind-spot monitoring, making the truck as safe as it
               is capable.`,
-            price: "45,000 EUR"
-          },
-        ]
-      }
-    },
-    {
-        Tesla: {
-        Models: [
-          {
-            title: "Model Y",
-            description: `Electric Performance: The Model Y offers impressive performance
+        price: '45,000 EUR',
+      },
+    ],
+  },
+  {
+    name: 'Tesla',
+    models: [
+      {
+        title: 'Model Y',
+        description: `Electric Performance: The Model Y offers impressive performance
               with different variants such as the Long Range and Performance
               models. The Long Range variant delivers up to 330 miles of range
               on a single charge, while the Performance model can accelerate
@@ -262,17 +245,16 @@ export const listOfCars = [
               charging on long road trips. It can charge from 10% to 80% in
               about 30 minutes at a Supercharger. It also supports home charging
               via a Tesla Wall Connector, making it convenient for daily use.`,
-            price: "48,000 EUR"
-          },
-        ]
-      }
-    },
-    {
-        Volkswagen: {
-        Models: [
-          {
-            title: "ID.4",
-            description: `Electric Powertrain: The ID.4 comes with a rear-mounted electric
+        price: '48,000 EUR',
+      },
+    ],
+  },
+  {
+    name: 'Volkswagen',
+    models: [
+      {
+        title: 'ID.4',
+        description: `Electric Powertrain: The ID.4 comes with a rear-mounted electric
               motor, delivering up to 201 horsepower in its base models and 295
               horsepower in the dual-motor all-wheel-drive variants. With an
               estimated range of 250 to 275 miles on a single charge, the ID.4
@@ -298,9 +280,8 @@ export const listOfCars = [
               it environmentally friendly. It also qualifies for various
               government incentives and rebates, which can make it more
               affordable compared to conventional SUVs.`,
-            price: "40,000 EUR"
-          },
-        ]
-      }
-    }
-  ];
+        price: '40,000 EUR',
+      },
+    ],
+  },
+];

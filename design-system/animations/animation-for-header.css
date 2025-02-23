@@ -1,5 +1,4 @@
 @keyframes animation-for-main-title {
-
     0%{
       transform: translateX(-1000px);
     }
@@ -18,10 +17,9 @@
     100%{
       transform: translateY(0px);
     }
-    
   }
 
-  .animation-for-main-title{
+  .animation-for-header-title{
     animation: animation-for-main-title 0.8s ease-in 0.2s 1;
   }
   

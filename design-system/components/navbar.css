@@ -1,24 +1,21 @@
-
 nav {
-    background-color: var(--color-nav);
-  }
-  
-  nav > a {
-    display: inline-block;
-    padding: 0.4375rem 0.9375rem;
-    color: #fff;
-  }
-  
-  nav > a:hover {
-    color: var(--color-tertiary);
-    background: var(--color-primary);
-  }
-  
+  background-color: var(--color-nav);
+}
 
-.nav-link:hover{
-    text-decoration: underline;
-  }
+nav > a {
+  display: inline-block;
+  padding: 0.4375rem 0.9375rem;
+  color: #fff;
+}
+
+nav > a:hover {
+  color: var(--color-tertiary);
+  background: var(--color-primary);
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
 .nav-link {
   text-decoration: none;
 }
-

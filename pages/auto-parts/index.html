@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoMag - Your four wheel dealer</title>
+    <meta
+      name="description"
+      content="Car shop with affordable prices and popular brands like Toyota, Citroen, Peugeot, Volkswagen, Honda, Chevrolet, Tesla and Dacia"
+    />
+    <link href="./../../design-system/index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./auto-parts.js"></script>
+  </head>
+  <body class="body auto-parts-page">
+    <header class="layout-header">
+      <h1>AutoMag</h1>
+      <h2>Your four wheel dealer</h2>
+    </header>
+    <nav class="main-nav sticky z-index-100">
+      <a class="nav-link" href="/index.html">Home</a>
+      <a class="nav-link" href="/pages/brand-models/">Brands and models</a>
+      <a class="nav-link" href="/pages/auto-parts">Auto parts</a>
+      <a class="nav-link" href="#">Service</a>
+      <a class="nav-link" href="#">About us</a>
+      <a class="nav-link" href="#">Contact</a>
+    </nav>
+
+    <main class="main-content">
+      <h3>Auto parts</h3>
+      <div class="cars-selectors-container simple-margin">
+        <div class="flex-column gap-dropdowns margin-right">
+          <label for="car-brand-dropdown">Car brand</label>
+          <select
+            id="car-brand-dropdown"
+            class="general-select select-brand"
+            aria-label="Select a car brand"
+          >
+            <option>Select brand</option>
+          </select>
+        </div>
+        <div class="flex-column gap-dropdowns margin-right">
+          <label for="car-model-dropdown gap-dropdowns margin-right">
+            Model
+          </label>
+          <select
+            id="car-model-dropdown"
+            class="general-select select-model"
+            aria-label="Select a model"
+          >
+            <option>Select model</option>
+          </select>
+        </div>
+        <div class="flex-column gap-dropdowns margin-right">
+          <label for="fuel-type-dropwdown"> Fuel type </label>
+          <select
+            id="fuel-type-dropwdown"
+            class="general-select select-fuel-type"
+            aria-label="Select fuel type"
+          >
+            <option>Select fuel type</option>
+          </select>
+        </div>
+        <div class="flex-column gap-dropdowns margin-right">
+          <label for="engine-displacement-dropdown">
+            Engine displacement
+          </label>
+          <select
+            id="engine-displacement-dropdown"
+            class="general-select select-engine-displacement"
+            aria-label="Select engine displacement"
+          >
+            <option>Select engine displacement</option>
+          </select>
+        </div>
+        <div class="flex-column gap-dropdowns margin-right">
+          <label for="horsepower-dropdown"> Horsepower </label>
+          <select
+            id="horsepower-dropdown"
+            class="general-select select-horsepower"
+            aria-label="Select horsepower"
+          >
+            <option>Select horsepower</option>
+          </select>
+        </div>
+      </div>
+
+      <section class="cards-grid simple-margin hidden auto-parts-grid">
+        <article class="card">
+          <header>
+            <img
+              class="card-image"
+              width="250"
+              src="https://catalog.polo.blue/_spoko/036129611CD-036129611CE-air-filter_1u98y9.webp"
+              alt="filters"
+            />
+          </header>
+          <h3>Filters</h3>
+        </article>
+        <article class="card">
+          <img
+            class="card-image"
+            width="250"
+            src="https://images.pexels.com/photos/8237050/pexels-photo-8237050.jpeg"
+            alt="engine"
+          />
+          <h3>Engine</h3>
+        </article>
+        <article class="card">
+          <header>
+            <img
+              class="card-image"
+              width="250"
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Camshaft_revealed_MG_series_MG_A_twin_camshaft_coup%C3%A9.jpg"
+              alt="camshaft"
+            />
+          </header>
+          <h3>Camshaft</h3>
+        </article>
+        <article class="card">
+          <header>
+            <img
+              width="250"
+              src="https://attic.sh/kywgd0zry2yx21vjxvgkmn3l0njt"
+              alt="suspension"
+            />
+          </header>
+          <h3>Suspension</h3>
+        </article>
+        <article class="card">
+          <header>
+            <img
+              class="card-image"
+              width="250"
+              src="https://cdn2.picryl.com/photo/1937/12/31/thermo-syphon-cooling-circulation-manual-of-driving-and-maintenance-948dfd-640.jpg"
+              alt="cooling systems"
+            />
+          </header>
+          <h3>Cooling systems</h3>
+        </article>
+        <article class="card">
+          <header>
+            <img
+              class="card-image"
+              width="250"
+              src="https://live.staticflickr.com/7666/17297654622_767e4e8bb0_b.jpg"
+              alt="body parts"
+            />
+          </header>
+          <h3>Body parts</h3>
+        </article>
+        <article class="card">
+          <header>
+            <img
+              class="card-image"
+              width="250"
+              src="https://live.staticflickr.com/65535/49645012763_20e3c1e46d_b.jpg"
+              alt="exhaust"
+            />
+          </header>
+          <h3>Exhaust</h3>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div class="footer-link-container">
+        <a class="footer-links" href="#">Terms and Agreements</a>
+        <a class="footer-links" href="#">Privacy policy</a>
+        <a class="footer-links" href="#">Cookies</a>
+        <a class="footer-links" href="#">Contact</a>
+      </div>
+      <p>Copyright © AutoMag</p>
+    </footer>
+  </body>
+</html>
