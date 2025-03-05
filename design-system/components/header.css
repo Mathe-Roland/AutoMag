@@ -1,0 +1,16 @@
+
+.header {
+    background-color: var(--header);
+  }
+  
+  .header h1,
+  .header h2 {
+    margin: var(--size-md) var(--size-sm); 
+  }
+  
+  header  h1,
+  header  h2 {
+    color: white;
+  }
+  
+  

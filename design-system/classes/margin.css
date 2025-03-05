@@ -16,6 +16,14 @@
     text-align: center;
   }
   
+.s-gap{
+    gap: 0.5rem;
+}
+
+.m-gap{
+    gap: 1rem;
+}
+
   h1,
   h2,
   h3 {

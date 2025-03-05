@@ -38,4 +38,38 @@ export default class CarsService {
 
     return selectedModels;
   }
+
+  static populateCarsGrid(car,carsGrid) {
+    const card = document.createElement('article');
+    
+    card.classList.add('individual-cars-card-container');
+  
+    card.innerHTML = `
+      <article class="card">
+        <header>
+          ${
+            car.image
+              ? `<img class="card-image"
+                    src=${car.image}
+                    alt=${car.title} />`
+              : ''
+          }
+        </header>
+        <div class="card-main-content">
+          <h4>${car.title}</h4>
+          <p>
+            ${car.description}
+          </p>
+          <p class="price-individual-card">${car.price}</p>
+        </div>
+        <footer class="flex j-c-c m-gap">
+          <button class="s-xs-padding" aria-label="More details about Toyota Corolla LE" class=".buttons">More details...</button>
+          <button class="s-xs-padding" aria-label="Buy Toyota Corolla LE" class=".buttons">Buy</button>
+        </footer>
+      </article>
+    `;
+  
+    carsGrid.appendChild(card);
+  }
+
 }

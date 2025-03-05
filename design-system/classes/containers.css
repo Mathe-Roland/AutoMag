@@ -1,3 +1,24 @@
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
 .cards-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -5,22 +26,6 @@
     place-items: center;
   }
 
-
-  .details-and-buy-button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-  }
-  
-
-.price-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
 
   
 .auto-parts-page .cars-selectors-container{

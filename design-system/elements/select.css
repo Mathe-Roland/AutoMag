@@ -1,5 +1,5 @@
 
-.general-select{
-    padding: 0.3125rem;
+.select{
+    padding: var(--size-xxs);
   }
   

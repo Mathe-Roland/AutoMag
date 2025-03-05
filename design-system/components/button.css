@@ -1,5 +1,5 @@
 
-.card-buttons {
+.buttons {
     width: 7.5rem;
     height: 3.125rem;
     background-color:var(--color-button);
@@ -7,13 +7,8 @@
     border: none;
   }
   
-  .card-buttons:hover {
+  .buttons:hover {
     background-color: var(--color-button-hover);
   }
 
-  .details-and-buy-button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-  }
+ 

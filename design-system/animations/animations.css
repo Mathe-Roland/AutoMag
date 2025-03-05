@@ -1,0 +1,30 @@
+@keyframes animations-slide-left {
+    0%{
+      transform: translateX(-1000px);
+    }
+  
+    100%{
+      transform: translate(0px);
+    }
+  
+  }
+  
+  @keyframes animation-slide-down {
+    0%{
+      transform: translateY(-1000px);
+    }
+  
+    100%{
+      transform: translateY(0px);
+    }
+  }
+
+  .animations-slide-left{
+    animation: animations-slide-left 0.8s ease-in 0.2s 1;
+  }
+  
+  .animation-slide-down{
+    animation: animation-slide-down 0.8s ease-in-out 0.2s 1;;
+  }
+  
+  
