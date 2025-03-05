@@ -1,4 +1,4 @@
-import { checkIfAnimationWasDone } from './../../common/scripts/common.js';
+import { checkIfHeaderAnimatiosnWereDone } from './../../common/scripts/common.js';
 import CarsService from './../../common/scripts/services/cars.service.js';
 
 const brandsDropdown = document.querySelector('#car-brand-dropdown');
@@ -8,7 +8,7 @@ const carsGrid = document.querySelector('.cars-grid');
 initializePage();
 
 function initializePage() {
-  checkIfAnimationWasDone();
+  checkIfHeaderAnimatiosnWereDone();
   CarsService.initializeCarBrandsDropdown(brandsDropdown);
 
   brandsDropdown.addEventListener('change', onSelectBrand);

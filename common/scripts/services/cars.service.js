@@ -2,7 +2,7 @@ import { listOfCars } from './../../../mock-data/cars-mock.js';
 
 export default class CarsService {
   static #getCarBrand(selectedBrand) {
-    return listOfCars.find((carBrand) => carBrand.title === selectedBrand);
+    return listOfCars.find((carBrand) => carBrand.name === selectedBrand);
   }
 
   static initializeCarBrandsDropdown(brandsDropdown) {
@@ -10,8 +10,8 @@ export default class CarsService {
     console.log(listOfCars);
     listOfCars.forEach((carBrand) => {
       const item = document.createElement('option');
-      item.textContent = carBrand.title;
-      item.value = carBrand.title;
+      item.textContent = carBrand.name;
+      item.value = carBrand.name;
       brandsDropdown.appendChild(item);
     });
   }
@@ -50,19 +50,19 @@ export default class CarsService {
       <article class="card">
         <header>
           ${
-            car.image
+            car.models[0].image
               ? `<img class="card-image"
-                    src=${car.image}
-                    alt=${car.title} />`
+                    src=${car.models[0].image}
+                    alt=${car.models[0].title} />`
               : ''
           }
         </header>
         <div class="card-main-content">
-          <h4>${car.title}</h4>
+          <h4>${car.models[0].title}</h4>
           <p>
-            ${car.description}
+            ${car.models[0].description}
           </p>
-          <p class="price-individual-card">${car.price}</p>
+          <p class="price-individual-card">${car.models[0].price}</p>
         </div>
         <footer class="flex j-c-c m-gap">
           <button class="s-xs-padding" aria-label="More details about Toyota Corolla LE" class=".buttons">More details...</button>
