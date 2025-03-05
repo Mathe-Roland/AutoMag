@@ -1,4 +1,4 @@
-@import url('./animations/animation-for-header.css');
+@import url('./animations/animations.css');
 @import url('./classes/containers.css');
 @import url('./classes/margin.css');
 @import url('./classes/utility.css');
@@ -6,11 +6,10 @@
 @import url('./components/dropdowns.css');
 @import url('./components/footer.css');
 @import url('./components/navbar.css');
-@import url('./elements/button.css');
+@import url('./components/button.css');
 @import url('./classes/padding.css');
 
 @import url('./components/header.css');
-@import url('./elements/button.css');
 @import url('./elements/select.css');
 @import url('./variables/colors.css');
 @import url('./variables/fonts.css');

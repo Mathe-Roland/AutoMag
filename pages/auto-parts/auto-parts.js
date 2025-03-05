@@ -1,8 +1,8 @@
-import { checkIfAnimationWasDone } from './../../common/scripts/common.js';
+import { checkIfHeaderAnimatiosnWereDone } from './../../common/scripts/common.js';
 import { engineOptions } from '../../mock-data/engine-mock.js';
 import CarsService from '../../common/scripts/services/cars.service.js';
 
-const container = document.querySelector('.cars-selectors-container');
+const container = document.querySelector('.select-brands-js');
 const brandSelector = document.querySelector('.select-brand');
 const modelSelector = document.querySelector('.select-model');
 const fuelTypeSelector = document.querySelector('.select-fuel-type');
@@ -15,14 +15,16 @@ const autoPartsGrid = document.querySelector('.auto-parts-grid');
 initializePage();
 
 function initializePage() {
-  checkIfAnimationWasDone();
-  CarsService.initializeCarBrandsDropdown(brandSelector);
+  checkIfHeaderAnimatiosnWereDone();
   populateEngine(engineOptions.fuelTypeOptions, fuelTypeSelector);
   populateEngine(engineOptions.horsepowerOptions, horsepowerSelector);
   populateEngine(
     engineOptions.engineDisplacementOptions,
     engineDisplacementSelector
   );
+
+  CarsService.initializeCarBrandsDropdown(brandSelector);
+
 
   container.addEventListener('change', onSelectChange);
 }

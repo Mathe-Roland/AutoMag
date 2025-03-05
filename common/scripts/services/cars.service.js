@@ -2,14 +2,16 @@ import { listOfCars } from './../../../mock-data/cars-mock.js';
 
 export default class CarsService {
   static #getCarBrand(selectedBrand) {
-    return listOfCars.find((carBrand) => carBrand.name === selectedBrand);
+    return listOfCars.find((carBrand) => carBrand.title === selectedBrand);
   }
 
   static initializeCarBrandsDropdown(brandsDropdown) {
+
+    console.log(listOfCars);
     listOfCars.forEach((carBrand) => {
       const item = document.createElement('option');
-      item.textContent = carBrand.name;
-      item.value = carBrand.name;
+      item.textContent = carBrand.title;
+      item.value = carBrand.title;
       brandsDropdown.appendChild(item);
     });
   }
